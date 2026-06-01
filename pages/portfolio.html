@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="description" content="Agencia de marketing digital especializada en estrategia, diseño y comunicación. Acompañamos marcas a crecer con identidad y claridad."> 
+
+    <meta name="author" content="Franco Lescano">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    
+
+<header>
+
+
+         <nav class="navbar navbar-expand-lg sticky-top" style="background-color:#fe28a6;">
+   <div class="container">
+    <a class="navbar-brand" href="../index.html">
+    <img src="../img/brava-foto-perfil.png" alt="Brava Marketing logo">
+    </a>
+
+
+    <button class="navbar-toggler border-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarBrava"
+            aria-controls="navbarBrava" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarBrava">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="servicios.html">Servicios</a></li>
+         <li class="nav-item"><a class="nav-link text-white" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="testimonios.html">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="portfolio-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="contacto-titulo">Nuestro portfolio</h2>
+    </div>
+
+<div id="portfolioCarousel" class="carousel slide">
+
+  <div class="carousel-inner rounded-4 overflow-hidden">
+
+
+
+   <div class="carousel-item active">
+  <picture>
+    <source srcset="../img/portfolio-vertical.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio.png" class="d-block w-100" onclick="openModal(0)">
+  </picture>
+</div>
+
+    <div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-1.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-1.png" class="d-block w-100" onclick="openModal(1)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-2.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-2.png" class="d-block w-100" onclick="openModal(2)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-3.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-3.png" class="d-block w-100" onclick="openModal(3)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-4.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-4.png" class="d-block w-100" onclick="openModal(4)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-5.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-5.png" class="d-block w-100" onclick="openModal(5)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-6.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-6.png" class="d-block w-100" onclick="openModal(6)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-7.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-7.png" class="d-block w-100" onclick="openModal(7)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-8.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-8.png" class="d-block w-100" onclick="openModal(8)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-9.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-9.png" class="d-block w-100" onclick="openModal(9)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-10.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-10.png" class="d-block w-100" onclick="openModal(10)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-11.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-11.png" class="d-block w-100" onclick="openModal(11)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-12.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-12.png" class="d-block w-100" onclick="openModal(12)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-13.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-13.png" class="d-block w-100" onclick="openModal(13)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-14.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-14.png" class="d-block w-100" onclick="openModal(14)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-15.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-15.png" class="d-block w-100" onclick="openModal(15)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-16.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-16.png" class="d-block w-100" onclick="openModal(16)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-17.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-17.png" class="d-block w-100" onclick="openModal(17)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-18.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-18.png" class="d-block w-100" onclick="openModal(18)">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source srcset="../img/portfolio-vertical-19.jpg" media="(max-width: 768px)">
+    <img src="../img/portfolio-19.png" class="d-block w-100" onclick="openModal(19)">
+  </picture>
+</div>
+
+
+  </div>
+
+  
+
+  <!-- FLECHA IZQUIERDA -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <!-- FLECHA DERECHA -->
+  <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+
+
+<div class="modal fade" id="imgModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-lg">
+    <div class="modal-content bg-transparent border-0 position-relative">
+
+      <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Cerrar">✕</button>
+
+      <button type="button" class="modal-arrow left" onclick="prevImg()">❮</button>
+
+      <img id="modalImg" src="" class="w-100 rounded-4">
+
+      <button type="button" class="modal-arrow right" onclick="nextImg()">❯</button>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+</main>
+
+
+
+
+
+
+<footer class="sitio-footer"> 
+   <div class="footer-container">
+
+    
+    <div>
+      <img class="footer-logo" src="../img/brava-foto-perfil.png" alt="foto-perfil"> 
+    </div>
+
+    <!-- Redes -->
+    <div class="footer-social">
+       <p class="footer-title">Nuestras redes</p>
+       <a href="https://www.instagram.com/labravamarketing/" target="_blank" rel="noopener noreferrer">Instagram
+       <i class="bi bi-instagram"></i>
+       </a>
+       <a href="https://www.linkedin.com/company/la-brava-marketing" target="_blank" rel="noopener noreferrer">LinkedIn
+        <i class="bi bi-linkedin"></i>
+       </a>
+
+       <a href="https://api.whatsapp.com/send?phone=543465592182" target="_blank" rel="noopener noreferrer">WhatsApp
+       <i class="bi bi-whatsapp"></i>
+       </a>
+    </div>
+
+
+
+    <!-- Extra-->
+    <div class="footer-extra">
+       <p class="footer-title">Agencia de Marketing Digital</p>
+       <p class="footer-text">
+        Diseño · Desarrollo · Estrategia
+       </p>
+    </div>
+
+
+
+             <div class="footer-bottom">
+                 <p>© 2026 — La Brava Marketing</p>
+             </div>
+
+
+
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+
+<script>
+const imagesDesktop = [
+  "../img/portfolio.png",
+  "../img/portfolio-1.png",
+  "../img/portfolio-2.png",
+  "../img/portfolio-3.png",
+  "../img/portfolio-4.png",
+  "../img/portfolio-5.png",
+  "../img/portfolio-6.png",
+  "../img/portfolio-7.png",
+  "../img/portfolio-8.png",
+  "../img/portfolio-9.png",
+  "../img/portfolio-10.png",
+  "../img/portfolio-11.png",
+  "../img/portfolio-12.png",
+  "../img/portfolio-13.png",
+  "../img/portfolio-14.png",
+  "../img/portfolio-15.png",
+  "../img/portfolio-16.png",
+  "../img/portfolio-17.png",
+  "../img/portfolio-18.png",
+  "../img/portfolio-19.png"
+];
+
+const imagesMobile = [
+  "../img/portfolio-vertical.jpg",
+  "../img/portfolio-vertical-1.jpg",
+  "../img/portfolio-vertical-2.jpg",
+  "../img/portfolio-vertical-3.jpg",
+  "../img/portfolio-vertical-4.jpg",
+  "../img/portfolio-vertical-5.jpg",
+  "../img/portfolio-vertical-6.jpg",
+  "../img/portfolio-vertical-7.jpg",
+  "../img/portfolio-vertical-8.jpg",
+  "../img/portfolio-vertical-9.jpg",
+  "../img/portfolio-vertical-10.jpg",
+  "../img/portfolio-vertical-11.jpg",
+  "../img/portfolio-vertical-12.jpg",
+  "../img/portfolio-vertical-13.jpg",
+  "../img/portfolio-vertical-14.jpg",
+  "../img/portfolio-vertical-15.jpg",
+  "../img/portfolio-vertical-16.jpg",
+  "../img/portfolio-vertical-17.jpg",
+  "../img/portfolio-vertical-18.jpg",
+  "../img/portfolio-vertical-19.jpg"
+];
+
+let currentIndex = 0;
+
+function getImages() {
+  return window.innerWidth <= 768
+    ? imagesMobile
+    : imagesDesktop;
+}
+
+function openModal(index){
+  currentIndex = index;
+
+  document.getElementById("modalImg").src =
+    getImages()[currentIndex];
+
+  var modal = new bootstrap.Modal(
+    document.getElementById('imgModal')
+  );
+
+  modal.show();
+}
+
+function nextImg(){
+  const images = getImages();
+
+  currentIndex =
+    (currentIndex + 1) % images.length;
+
+  document.getElementById("modalImg").src =
+    images[currentIndex];
+}
+
+function prevImg(){
+  const images = getImages();
+
+  currentIndex =
+    (currentIndex - 1 + images.length) % images.length;
+
+  document.getElementById("modalImg").src =
+    images[currentIndex];
+}
+</script>
