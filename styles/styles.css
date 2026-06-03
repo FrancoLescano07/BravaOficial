@@ -143,7 +143,7 @@ header img {
   padding: 90px 20px;
 }
 
-/* NUBE estilo Hola Marketing */
+
 .nube-hola {
   max-width: 900px;
   margin: 0 auto;
@@ -234,28 +234,28 @@ header img {
 
 .team-card {
   text-align: center;
-  position: relative;
   max-width: 280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-info {
-  position: relative;
-  margin-top: -12px;
+  margin-top: 0; 
   width: 100%;
   padding: 18px;
   border-radius: 0 0 24px 24px;
-  background: rgba(254, 40, 166, 0.15);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  background: rgba(254,40,166,0.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
 }
 
 .team-img {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 24px;
+  border-radius: 24px 24px 0 0; 
   display: block;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
 }
 
 .team-info h3 {
@@ -803,6 +803,9 @@ header img {
   transform: scale(1.05);
 }
 
+
+
+
 /* MOBILE */
 @media (max-width: 500px) {
   .contacto-brava-section {
@@ -931,29 +934,33 @@ header img {
     line-height: 1.6;
   }
   .decor-1 {
-    width: 88px;
-    top: -18px;
+    width: 60px; /* Un toque más chico para que no sature en mobile */
+    top: -22px;
     left: 12px;
   }
   .decor-2 {
-    width: 78px;
+    width: 65px; /* Un toque más chico */
     top: 18px;
-    right: -12px;
+    right: -8px;
   }
+  
+  /* LOS DOS DE ABAJO QUE SE SALÍAN: */
   .decor-3 {
-    width: 84px;
-    bottom: -36px;
-    left: 26px;
+    width: 60px;       /* Reducimos el tamaño para que entre bien en la curva */
+    bottom: -10px;     /* CAMBIO: De -36px a -10px (Lo subimos para que entre a la nube) */
+    left: 45px;        /* CAMBIO: De 26px a 45px (Lo corremos a la derecha, hacia el centro, para esquivar la curva cerrada) */
   }
   .decor-4 {
-    width: 74px;
-    bottom: -22px;
-    right: 6px;
+    width: 55px;       /* Reducimos el tamaño */
+    bottom: -8px;      /* CAMBIO: De -22px a -8px (Lo subimos) */
+    right: 25px;       /* CAMBIO: De 6px a 25px (Lo corremos a la izquierda, hacia el centro) */
   }
+
   .intro-brava {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .equipo-img {
     width: 100%;
     max-height: 260px;
@@ -1009,17 +1016,19 @@ header img {
     text-align: center;
   }
   .portfolio-section {
-    padding: 60px 16px;
+    padding: 20px 16px; 
   }
+
   #portfolioCarousel .carousel-item {
-    background-color: #fff;
+    background-color: transparent; 
   }
+
   #portfolioCarousel .carousel-item img {
     width: 100%;
-    height: 90vh;
-    object-fit: contain;
+    height: auto; 
+    object-fit: cover; 
     display: block;
-    background-color: #fff;
+    background-color: transparent; /* Cambiamos a transparente */
   }
   #portfolioCarousel .carousel-control-prev,
   #portfolioCarousel .carousel-control-next {
