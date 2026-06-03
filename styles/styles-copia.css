@@ -1005,15 +1005,12 @@ font-family: 'Bricolage Grotesque', sans-serif;
     margin: 0 auto;
   }
 
-  .nube-hola{
-    padding: 42px 24px;
-    border-radius: 58% 42% 50% 50% / 46% 58% 42% 54%;
-    background: linear-gradient(
-      135deg,
-      rgba(254,40,166,0.18),
-      rgba(254,40,166,0.07)
-    );
-    box-shadow: 0 14px 30px rgba(254,40,166,0.14);
+  .nube-hola {
+    position: relative; /* ¡ESENCIAL! Esto hace que los decoradores se alineen con la nube y no con el fondo */
+    padding: 42px 24px 60px 24px; /* Aumentamos el padding de ABAJO (de 42px a 60px) para dejarle una zona segura y exclusiva a los emojis */
+    border-radius: 58% 42% 50% 50%/46% 58% 42% 54%;
+    background: linear-gradient(135deg, rgba(254, 40, 166, 0.18), rgba(254, 40, 166, 0.07));
+    box-shadow: 0 14px 30px rgba(254, 40, 166, 0.14);
   }
 
   .nube-tag{
@@ -1043,15 +1040,16 @@ font-family: 'Bricolage Grotesque', sans-serif;
   }
   
   /* LOS DOS DE ABAJO QUE SE SALÍAN: */
-  .decor-3 {
-    width: 60px;       /* Reducimos el tamaño para que entre bien en la curva */
-    bottom: -10px;     /* CAMBIO: De -36px a -10px (Lo subimos para que entre a la nube) */
-    left: 45px;        /* CAMBIO: De 26px a 45px (Lo corremos a la derecha, hacia el centro, para esquivar la curva cerrada) */
+ .decor-3 { /* El foquito de la izquierda */
+    width: 45px;       /* Un toque más chicos para que jueguen mejor con las curvas */
+    bottom: 8px;       /* Valores positivos para que se queden ADENTRO de la nube */
+    left: 15%;         /* Usamos porcentaje para que acompañe la curva en pantallas anchas y chicas */
   }
-  .decor-4 {
-    width: 55px;       /* Reducimos el tamaño */
-    bottom: -8px;      /* CAMBIO: De -22px a -8px (Lo subimos) */
-    right: 25px;       /* CAMBIO: De 6px a 25px (Lo corremos a la izquierda, hacia el centro) */
+
+  .decor-4 { /* El diamante de la derecha */
+    width: 40px;
+    bottom: 12px;      /* Adentro de la nube */
+    right: 15%;        /* Usamos porcentaje */
   }
 
 .intro-brava {
