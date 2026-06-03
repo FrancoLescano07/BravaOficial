@@ -934,28 +934,28 @@ header img {
     font-size: 1rem;
     line-height: 1.6;
   }
-  .decor-1 {
-    width: 60px; /* Un toque más chico para que no sature en mobile */
-    top: -22px;
-    left: 12px;
-  }
-  .decor-2 {
-    width: 65px; /* Un toque más chico */
-    top: 18px;
-    right: -8px;
-  }
-  
-  /* LOS DOS DE ABAJO QUE SE SALÍAN: */
- .decor-3 { /* El foquito de la izquierda */
-    width: 45px;       /* Un toque más chicos para que jueguen mejor con las curvas */
-    bottom: 8px;       /* Valores positivos para que se queden ADENTRO de la nube */
-    left: 15%;         /* Usamos porcentaje para que acompañe la curva en pantallas anchas y chicas */
+  .decor-1 { /* El cursor / flecha de arriba a la izquierda */
+    width: 65px;         /* Tamaño estilizado para mobile */
+    top: -10px;          /* Lo bajamos un poquito */
+    left: 20%;           /* CAMBIO: Lo movemos más a la derecha (20%) para que entre sí o sí en la nube */
   }
 
-  .decor-4 { /* El diamante de la derecha */
-    width: 40px;
-    bottom: 12px;      /* Adentro de la nube */
-    right: 15%;        /* Usamos porcentaje */
+  .decor-2 { /* El moño de arriba a la derecha */
+    width: 65px;
+    top: 15px;
+    right: -2px;         /* Lo pegamos bien al borde derecho */
+  }
+  
+  .decor-3 { /* El foquito de abajo a la izquierda */
+    width: 55px;         /* Escalado ideal para mobile */
+    bottom: 25px;        /* CAMBIO: Lo subimos de 12px a 25px para que trepe la curva en el iPhone 11 */
+    left: 22%;           /* CAMBIO: Lo movemos bastante hacia el centro (22%) para esquivar el recorte de la mancha */
+  }
+
+  .decor-4 { /* El diamante de abajo a la derecha */
+    width: 50px;         /* Escalado ideal */
+    bottom: 28px;        /* CAMBIO: Lo subimos para que no quede flotando en el blanco */
+    right: 22%;          /* CAMBIO: Lo movemos hacia el centro (22%) para meterlo en la zona rosa */
   }
 
   .intro-brava {
