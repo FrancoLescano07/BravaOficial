@@ -1001,16 +1001,20 @@ font-family: 'Bricolage Grotesque', sans-serif;
     padding: 50px 16px;
   }
 
-  .nube-tag {
+ .nube-tag {
     font-size: 12px;
     margin-bottom: 14px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #000 !important; 
   }
 
   .nube-hola h2 {
     font-size: 1.8rem;
     margin-bottom: 18px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #fe28a6 !important;      /* <--- Forzamos el negro puro igual al de abajo */
+    font-weight: 700 !important;
   }
-
   .nube-desc {
     font-size: 1rem;
     line-height: 1.6;
@@ -1023,15 +1027,15 @@ font-family: 'Bricolage Grotesque', sans-serif;
   /* Estiramos la mancha rosa hacia abajo para generar el espacio vacío */
   .nube-hola {
     position: relative !important;
-    padding-bottom: 110px !important; /* <--- Subimos a 110px para garantizar el aire abajo */
+    padding-bottom: 40px !important; /* <--- Subimos a 110px para garantizar el aire abajo */
   }
 
   /* La Flecha (decor-1) ingresa bien en la zona rosa */
   .nube-wrap .decor-1 { /* CAMBIO: Agregamos .nube-wrap adelante para darle fuerza */
     position: absolute !important;
     width: 65px !important;
-    top: -15px !important;
-    left: 20% !important; 
+    top: -30px !important;
+    left: 10% !important; 
     right: auto !important;
   }
 
@@ -1039,21 +1043,21 @@ font-family: 'Bricolage Grotesque', sans-serif;
   .nube-wrap .decor-2 { /* CAMBIO: Agregamos .nube-wrap adelante */
     position: absolute !important;
     width: 65px !important;
-    top: 15px !important;
+    top: 10px !important;
     right: 2% !important;
     left: auto !important;
   }
 
   .nube-wrap .contenedor-emojis-abajo {
     position: absolute !important;
-    bottom: 10px !important; /* Mantenemos la distancia perfecta del borde que ya logramos */
+    bottom: -50px !important;
     left: 50% !important;
     transform: translateX(-50%) !important; 
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 140px !important; /* <--- CAMBIO: Subimos de 30px a 60px para que se separen más hacia los costados */
+    gap: 150px !important; /* <--- CAMBIO: Subimos de 30px a 60px para que se separen más hacia los costados */
     width: 100% !important;
     pointer-events: none !important;
     z-index: 10 !important;
@@ -1069,11 +1073,11 @@ font-family: 'Bricolage Grotesque', sans-serif;
   }
 
   .contenedor-emojis-abajo .decor-3 {
-    width: 68px !important; /* <--- CAMBIO: Subimos de 55px a 70px (La lámpara) */
+    width: 75px !important; /* <--- CAMBIO: Subimos de 55px a 70px (La lámpara) */
   }
 
   .contenedor-emojis-abajo .decor-4 {
-    width: 63px !important; /* <--- CAMBIO: Subimos de 50px a 65px (La joya) */
+    width: 70px !important; /* <--- CAMBIO: Subimos de 50px a 65px (La joya) */
   }
 .intro-brava {
     padding-top: 20px;
