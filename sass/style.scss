@@ -997,62 +997,84 @@ font-family: 'Bricolage Grotesque', sans-serif;
 
 
   
- .bienvenida-section{
+ .bienvenida-section {
     padding: 50px 16px;
   }
 
-  .nube-wrap{
-    position: relative;
-    margin: 0 auto;
-  }
-
-  .nube-hola {
-    position: relative; /* ¡ESENCIAL! Esto hace que los decoradores se alineen con la nube y no con el fondo */
-    padding: 42px 24px 60px 24px; /* Aumentamos el padding de ABAJO (de 42px a 60px) para dejarle una zona segura y exclusiva a los emojis */
-    border-radius: 58% 42% 50% 50%/46% 58% 42% 54%;
-    background: linear-gradient(135deg, rgba(254, 40, 166, 0.18), rgba(254, 40, 166, 0.07));
-    box-shadow: 0 14px 30px rgba(254, 40, 166, 0.14);
-  }
-
-  .nube-tag{
+  .nube-tag {
     font-size: 12px;
     margin-bottom: 14px;
   }
 
-  .nube-hola h2{
+  .nube-hola h2 {
     font-size: 1.8rem;
     margin-bottom: 18px;
   }
 
-  .nube-desc{
+  .nube-desc {
     font-size: 1rem;
     line-height: 1.6;
   }
 
-  .decor-1 { /* El cursor / flecha de arriba a la izquierda */
-    width: 65px;         /* Tamaño estilizado para mobile */
-    top: -10px;          /* Lo bajamos un poquito */
-    left: 20%;           /* CAMBIO: Lo movemos más a la derecha (20%) para que entre sí o sí en la nube */
+  .nube-wrap {
+    position: relative !important;
   }
 
-  .decor-2 { /* El moño de arriba a la derecha */
-    width: 65px;
-    top: 15px;
-    right: -2px;         /* Lo pegamos bien al borde derecho */
-  }
-  
-  .decor-3 { /* El foquito de abajo a la izquierda */
-    width: 55px;         /* Escalado ideal para mobile */
-    bottom: 25px;        /* CAMBIO: Lo subimos de 12px a 25px para que trepe la curva en el iPhone 11 */
-    left: 22%;           /* CAMBIO: Lo movemos bastante hacia el centro (22%) para esquivar el recorte de la mancha */
+  /* Estiramos la mancha rosa hacia abajo para generar el espacio vacío */
+  .nube-hola {
+    position: relative !important;
+    padding-bottom: 110px !important; /* <--- Subimos a 110px para garantizar el aire abajo */
   }
 
-  .decor-4 { /* El diamante de abajo a la derecha */
-    width: 50px;         /* Escalado ideal */
-    bottom: 28px;        /* CAMBIO: Lo subimos para que no quede flotando en el blanco */
-    right: 22%;          /* CAMBIO: Lo movemos hacia el centro (22%) para meterlo en la zona rosa */
+  /* La Flecha (decor-1) ingresa bien en la zona rosa */
+  .nube-wrap .decor-1 { /* CAMBIO: Agregamos .nube-wrap adelante para darle fuerza */
+    position: absolute !important;
+    width: 65px !important;
+    top: -15px !important;
+    left: 20% !important; 
+    right: auto !important;
   }
 
+  /* El Moño (decor-2) */
+  .nube-wrap .decor-2 { /* CAMBIO: Agregamos .nube-wrap adelante */
+    position: absolute !important;
+    width: 65px !important;
+    top: 15px !important;
+    right: 2% !important;
+    left: auto !important;
+  }
+
+  .nube-wrap .contenedor-emojis-abajo {
+    position: absolute !important;
+    bottom: 10px !important; /* Mantenemos la distancia perfecta del borde que ya logramos */
+    left: 50% !important;
+    transform: translateX(-50%) !important; 
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 140px !important; /* <--- CAMBIO: Subimos de 30px a 60px para que se separen más hacia los costados */
+    width: 100% !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+  }
+
+  /* REFUERZO CRÍTICO: Forzamos a que las imágenes hereden el comportamiento estático dentro del contenedor */
+  .contenedor-emojis-abajo .decor-3,
+  .contenedor-emojis-abajo .decor-4 {
+    position: static !important;
+    transform: none !important;
+    clear: both !important;
+    display: inline-block !important;
+  }
+
+  .contenedor-emojis-abajo .decor-3 {
+    width: 68px !important; /* <--- CAMBIO: Subimos de 55px a 70px (La lámpara) */
+  }
+
+  .contenedor-emojis-abajo .decor-4 {
+    width: 63px !important; /* <--- CAMBIO: Subimos de 50px a 65px (La joya) */
+  }
 .intro-brava {
     padding-top: 20px;
     padding-bottom: 20px;
