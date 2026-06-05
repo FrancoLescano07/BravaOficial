@@ -166,32 +166,23 @@ width: 100px;
 }
 
 /* NUBE estilo Hola Marketing */
-.nube-hola{
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 70px 60px;
-  text-align: center;
-
-  background: linear-gradient(
-    135deg,
-    rgba(254,40,166,0.15),
-    rgba(254,40,166,0.05)
-  );
-
-  /* forma orgánica */
-  border-radius: 70% 30% 60% 40% / 40% 60% 30% 70%;
-
-  box-shadow: 0 20px 45px rgba(254,40,166,0.12);
-}
-
-/* Etiquetita superior */
-.nube-tag{
+.nube-tag {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fe28a6;
+  color: #000;
+   font-family: 'Bricolage Grotesque', sans-serif;
   margin-bottom: 18px;
   font-weight: 600;
+}
+
+/* Título */
+.nube-hola h2 {
+  font-size: 2.6rem;
+  margin-bottom: 24px;
+  color: #fe28a6;
+   font-family: 'Bricolage Grotesque', sans-serif;
+   font-weight: 700 !important;
 }
 
 /* Título */
